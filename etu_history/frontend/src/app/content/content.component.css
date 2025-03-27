@@ -1,0 +1,95 @@
+.content {
+  border-top: #05336e;
+  margin-top: 1vh;
+  padding: var(--var-sds-size-space-200, 100px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--var-sds-size-space-200, 8px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+
+}
+
+.text_content {
+  width: 80%;
+  color: var(--var-sds-color-text-default-default, #05336e);
+    text-align: left;
+    font-family: var(--single-line-body-base-font-family,
+        "Inter-Regular",
+        sans-serif);
+    font-size: var(--single-line-body-base-font-size, 20px);
+    line-height: var(--single-line-body-base-line-height, 30px);
+    font-weight: var(--single-line-body-base-font-weight, 400);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.check_content {
+  border-top: #05336e;
+  margin-top: 1vh;
+  padding: var(--var-sds-size-space-200, 100px);
+  flex-direction: row;
+  gap: var(--var-sds-size-space-200, 8px);
+  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+
+}
+
+td {
+  width: 1%;
+  border-radius: 10%;
+  border-color: black;
+  background-color: rgba(188, 207, 233, 0.377);
+  margin-left: 5px;
+}
+
+.text {
+  color: var(--var-sds-color-text-default-default, #05336e);
+    text-align: left;
+    font-family: var(--single-line-body-base-font-family,
+        "Inter-Regular",
+        sans-serif);
+    font-size: var(--single-line-body-base-font-size, 20px);
+    line-height: var(--single-line-body-base-line-height, 30px);
+    font-weight: var(--single-line-body-base-font-weight, 400);
+    position: relative;
+    align-items: center;
+    margin-left: 15px;
+
+}
+
+.title {
+  color: var(--var-sds-color-text-default-default, #05336e);
+    text-align: left;
+    font-family: var(--single-line-body-base-font-family,
+        "Inter-Regular",
+        sans-serif);
+    font-size: var(--single-line-body-base-font-size, 32px);
+    line-height: var(--single-line-body-base-line-height, 30px);
+    font-weight: var(--single-line-body-base-font-weight, 400);
+    position: relative;
+margin-left: 10%;
+    align-items: center;
+
+}
+
+.main-title {
+  color: var(--var-sds-color-text-default-default, #05336e);
+    text-align: left;
+    font-family: var(--single-line-body-base-font-family,
+        "Inter-Regular",
+        sans-serif);
+    font-size: var(--single-line-body-base-font-size, 40px);
+    line-height: var(--single-line-body-base-line-height, 45px);
+    font-weight: var(--single-line-body-base-font-weight, 400);
+    position: relative;
+    align-items: center;
+
+}
