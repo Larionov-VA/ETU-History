@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "projects": {
+    "frontend": {
+      "projectType": "application",
+      "root": "",
+      "sourceRoot": "src",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "assets": [
+                "src/assets/"
+                ],
+            "outputPath": "dist/frontend",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "styles": ["src/styles.css"],
+            "polyfills": ["zone.js"],
+            "tsConfig": "tsconfig.json",
+            "aot": true
+
+
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "buildTarget": "frontend:build"
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "6a572db7-de65-401b-8962-a0ea65cc7159"
+  }
+}
