@@ -1,0 +1,54 @@
+.content {
+  border-top: #05336e;
+  margin-top: 10px;
+  padding: var(--var-sds-size-space-200, 20px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--var-sds-size-space-200, 8px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+
+}
+
+.hist_treck {
+  clip-path: polygon(20% 50%,
+        0% 20%,
+        80% 20%,
+        100% 50%,
+        80% 80%,
+        0% 80%);
+  background-color: IndianRed;
+  margin-top: 5px;
+  margin-right: -25px;
+  margin-left: -25px;
+  padding: var(--var-sds-size-space-200, 40px);
+  width: 13%;
+  display: flex;
+  flex-direction: row;
+  gap: var(--var-sds-size-space-200, 10px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+
+
+.title {
+  color: var(--var-sds-color-text-default-default, #05336e);
+  text-align: left;
+  font-family: var(--single-line-body-base-font-family,
+      "Inter-Regular",
+      sans-serif);
+  font-size: var(--single-line-body-base-font-size, 48px);
+  line-height: var(--single-line-body-base-line-height, 48px);
+  font-weight: var(--single-line-body-base-font-weight, 400);
+  position: relative;
+  margin-left: 5%;
+  margin-right: 5%;
+  align-items: center;
+}
