@@ -33,24 +33,23 @@ export class ButtonComponent1 {
 
   isOpen = 'initial';
   content: string;
+  link: string;
 
   constructor(private elementRef: ElementRef) {
     this.content = this.elementRef.nativeElement.getAttribute('content');
+    this.link = this.elementRef.nativeElement.getAttribute('link');
   }
 
   onMouseEnter() {
     this.isOpen = 'final';
-    console.log(this.isOpen);
   }
 
   onMouseLeave() {
     this.isOpen = 'initial';
-    console.log(this.isOpen);
   }
 
   toogle(){
     this.isOpen = 'final';
-    console.log('Hello world');
   }
 }
 
@@ -77,25 +76,21 @@ export class ButtonComponent2 {
 
   isOpen = 'initial';
   content: string;
+  link: string;
 
   constructor(private elementRef: ElementRef) {
     this.content = this.elementRef.nativeElement.getAttribute('content');
+    this.link = this.elementRef.nativeElement.getAttribute('link');
   }
 
   onMouseEnter() {
-    this.isOpen = 'final';
-    console.log(this.isOpen);
-  }
+    this.isOpen = 'final';  }
 
   onMouseLeave() {
-    this.isOpen = 'initial';
-    console.log(this.isOpen);
-  }
+    this.isOpen = 'initial';  }
 
   toogle(){
-    this.isOpen = 'final';
-    console.log('Hello world');
-  }
+    this.isOpen = 'final';  }
 }
 
 @Component({
@@ -120,25 +115,21 @@ export class ButtonComponent3 {
 
   isOpen = 'initial';
   content: string;
+  link: string;
 
   constructor(private elementRef: ElementRef) {
     this.content = this.elementRef.nativeElement.getAttribute('content');
+    this.link = this.elementRef.nativeElement.getAttribute('link');
   }
 
   onMouseEnter() {
-    this.isOpen = 'final';
-    console.log(this.isOpen);
-  }
+    this.isOpen = 'final';  }
 
   onMouseLeave() {
-    this.isOpen = 'initial';
-    console.log(this.isOpen);
-  }
+    this.isOpen = 'initial';  }
 
   toogle(){
-    this.isOpen = 'final';
-    console.log('Hello world');
-  }
+    this.isOpen = 'final';  }
 }
 
 @Component({
@@ -163,25 +154,21 @@ export class ButtonComponent4 {
 
   isOpen = 'initial';
   content: string;
+  link: string;
 
   constructor(private elementRef: ElementRef) {
     this.content = this.elementRef.nativeElement.getAttribute('content');
+    this.link = this.elementRef.nativeElement.getAttribute('link');
   }
 
   onMouseEnter() {
-    this.isOpen = 'final';
-    console.log(this.isOpen);
-  }
+    this.isOpen = 'final';  }
 
   onMouseLeave() {
-    this.isOpen = 'initial';
-    console.log(this.isOpen);
-  }
+    this.isOpen = 'initial';  }
 
   toogle(){
-    this.isOpen = 'final';
-    console.log('Hello world');
-  }
+    this.isOpen = 'final';  }
 }
 
 

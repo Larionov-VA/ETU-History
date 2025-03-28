@@ -19,13 +19,13 @@
     </div>
     <div class="navigation-pill-list">
       <div class="navigation-pill2">
-        <div class="title2"><button-comp1 content="Главная"></button-comp1></div>
+        <div class="title2"><button-comp1 content="Главная" link=""></button-comp1></div>
       </div>
       <div class="navigation-pill2">
-        <div class="title2"><button-comp2 content="История"></button-comp2></div>
+        <div class="title2"><button-comp2 content="История" link="/history"></button-comp2></div>
       </div>
       <div class="navigation-pill2">
-        <div class="title2"><button-comp3 content="Викторина"></button-comp3></div>
+        <div class="title2"><button-comp3 content="Викторина" link="/victorina"></button-comp3></div>
       </div>
       <div class="navigation-pill2">
         <div class="title2"><button-comp4 content="Контакты"></button-comp4></div>
@@ -33,14 +33,18 @@
     </div>
   </div>
 
-  <div class="first_block">
-    <div class="center">
-      <div class="main_title">История ЛЭТИ</div>
-      <img src="{% static 'leti_logo.png'%}">
-    </div>
-  </div>
+{% if pageflag == 0 %}
+ <app-content link="{% static 'leti_logo.png' %}"></app-content>
+ {% endif %}
 
- <app-content></app-content>
+
+{% if pageflag == 1 %}
+<app-history></app-history>
+{% endif %}
+
+{% if pageflag == 2 %}
+<app-victorina></app-victorina>
+{% endif %}
 
   <div class="basement">
     aelbp wpebgpbi wibepib pwobeprigbpb wpirb
