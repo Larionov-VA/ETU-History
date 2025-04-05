@@ -7,6 +7,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { ContentComponent } from './app/content/content.component';
 import { VictorinaComponent } from './app/victorina/victorina.component';
 import { HistoryComponent } from './app/history/history.component';
+import { ContactComponent } from './app/contact/contact.component';
 
 bootstrapApplication(AppComponent, appConfig).catch((err) => console.error(err));
 
@@ -18,6 +19,8 @@ bootstrapApplication(ButtonComponent4, appConfig).catch((err) => console.error(e
 bootstrapApplication(ContentComponent, appConfig).catch((err) => console.error(err));
 bootstrapApplication(HistoryComponent, appConfig).catch((err) => console.error(err));
 bootstrapApplication(VictorinaComponent, appConfig).catch((err) => console.error(err));
+bootstrapApplication(ContactComponent, appConfig).catch((err) => console.error(err));
+
 
 bootstrapApplication(AppModule, appConfig).catch((err) => console.error(err));
 

@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 import { ContentComponent } from './content/content.component';
 import { HistoryComponent } from './history/history.component';
 import { VictorinaComponent } from './victorina/victorina.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   imports: [BrowserModule, BrowserAnimationsModule, AppComponent, ButtonComponent1, ButtonComponent2, ButtonComponent3, ButtonComponent4, ContentComponent,HistoryComponent,
-      VictorinaComponent],
+      VictorinaComponent, ContactComponent],
   declarations: [
 
    ],

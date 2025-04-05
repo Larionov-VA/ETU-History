@@ -49,7 +49,7 @@ export class ButtonComponent1 {
   }
 
   toogle(){
-    this.isOpen = 'final';
+    
   }
 }
 
