@@ -1,0 +1,100 @@
+.content {
+  border-top: #05336e;
+  margin-top: 1vh;
+  padding: var(--var-sds-size-space-200, 100px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--var-sds-size-space-200, 8px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.box {
+  border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    padding: var(--var-sds-size-space-800, 32px);
+    display: flex;
+    flex-direction: row;
+    gap: var(--var-sds-size-space-600, 24px);
+    row-gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.box_main {
+  margin-top: 1vh;
+  color: var(--var-sds-color-text-default-default, #05336e);
+    text-align: center;
+    font-family: var(--single-line-body-base-font-family,
+        "Inter-Regular",
+        sans-serif);
+    font-size: var(--single-line-body-base-font-size, 40px);
+    line-height: var(--single-line-body-base-line-height, 30px);
+    font-weight: var(--single-line-body-base-font-weight, 30px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 30%;
+}
+
+p {
+  color: var(--var-sds-color-text-default-default, #05336e);
+    text-align: center;
+    font-family: var(--single-line-body-base-font-family,
+        "Inter-Regular",
+        sans-serif);
+    font-size: var(--single-line-body-base-font-size, 20px);
+    line-height: var(--single-line-body-base-line-height, 35px);
+    font-weight: var(--single-line-body-base-font-weight, 400);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr {
+  border-bottom: 1px solid #05336e;
+  height: 30px;
+  line-height: var(--single-line-body-base-line-height, 30px);
+}
+
+.max {
+  width: 60%;
+}
+
+.min {
+  width: 15%;
+}
+
+table{
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: var(--var-sds-color-text-default-default, #05336e);
+  line-height: var(--single-line-body-base-line-height, 30px);
+  font-size: var(--single-line-body-base-font-size, 20px);
+  text-decoration: none;
+}
+
+ a:hover {
+   color: #bb8d54;
+ }
+
+
+.mail {
+  font-size: var(--single-line-body-base-font-size, 16px);
+}
