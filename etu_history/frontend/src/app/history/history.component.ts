@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 import { state, animate, style, transition, trigger } from "@angular/animations";
 
 
@@ -58,11 +58,6 @@ export class HistoryComponent {
   isOpen_33 = 'initial';
   isOpen_34 = 'initial';
   isOpen_35 = 'initial';
-  isOpen_36 = 'initial';
-  isOpen_37 = 'initial';
-  isOpen_38 = 'initial';
-  isOpen_39 = 'initial';
-  isOpen_40 = 'initial';
 
     onMouseEnter() {
       this.isOpen = 'final';
@@ -274,36 +269,5 @@ export class HistoryComponent {
     onMouseLeave_35() {
       this.isOpen_35 = 'initial';
     }
-    onMouseEnter_36() {
-      this.isOpen_36 = 'final';
-    }
-    onMouseLeave_36() {
-      this.isOpen_36 = 'initial';
-    }
-    onMouseEnter_37() {
-      this.isOpen_37 = 'final';
-    }
-    onMouseLeave_37() {
-      this.isOpen_37 = 'initial';
-    }
-    onMouseEnter_38() {
-      this.isOpen_38 = 'final';
-    }
-    onMouseLeave_38() {
-      this.isOpen_38 = 'initial';
-    }
-    onMouseEnter_39() {
-      this.isOpen_39 = 'final';
-    }
-    onMouseLeave_39() {
-      this.isOpen_39 = 'initial';
-    }
-    onMouseEnter_40() {
-      this.isOpen_40 = 'final';
-    }
-    onMouseLeave_40() {
-      this.isOpen_40 = 'initial';
-    }
-
 
 }

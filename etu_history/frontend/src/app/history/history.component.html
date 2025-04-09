@@ -1,66 +1,534 @@
 <div class="content">
   <div class="title">ФКТИ</div>
-  <div class="hist_treck" [@hover] = "isOpen" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">Г.Г.</div>
-  <div class="hist_treck" [@hover] = "isOpen_2" (mouseenter)="onMouseEnter_2()" (mouseleave)="onMouseLeave_2()">Г.Г.</div>
-  <div class="hist_treck" [@hover] = "isOpen_3" (mouseenter)="onMouseEnter_3()" (mouseleave)="onMouseLeave_3()">Г.Г.</div>
-  <div class="hist_treck" [@hover] = "isOpen_4" (mouseenter)="onMouseEnter_4()" (mouseleave)="onMouseLeave_4()">Г.Г.</div>
-  <div class="hist_treck" [@hover] = "isOpen_5" (mouseenter)="onMouseEnter_5()" (mouseleave)="onMouseLeave_5()">Г.Г.</div>
+  <div class="hist_treck" [@hover] = "isOpen" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()"><p class="yer">1922г.</p></div>
+  <div class="hist_treck" [@hover] = "isOpen_2" (mouseenter)="onMouseEnter_2()" (mouseleave)="onMouseLeave_2()"><p class="yer">1939г.</p></div>
+  <div class="hist_treck" [@hover] = "isOpen_3" (mouseenter)="onMouseEnter_3()" (mouseleave)="onMouseLeave_3()"><p class="yer">1973г.</p></div>
+  <div class="hist_treck" [@hover] = "isOpen_4" (mouseenter)="onMouseEnter_4()" (mouseleave)="onMouseLeave_4()"><p class="yer">1978г.</p></div>
+  <div class="hist_treck" [@hover] = "isOpen_5" (mouseenter)="onMouseEnter_5()" (mouseleave)="onMouseLeave_5()"><p class="yer">1982г.</p></div>
 </div>
+
+@if (isOpen == 'final'){
+  <div class="text_box"><p>Ещё в 1922 году на Электротехническом факультете, в составе специальности «Электрическое распределение механической
+  энергии» был введён профиль «Электрификация судов», который и явился своего рода начальной ячейкой будущего факультета
+  приборостроения и электрификации, организованного в 1932 году. </p>
+</div>
+}
+@if (isOpen_2 == 'final'){
+<div class="text_box">
+  <p>
+  Создан факультет приборостроения и спецтелемеханики<br>
+  4 ключевые кафедры:<br><br>
+
+  2. Вычислительная техника<br>
+  1931 - "Приборы точной механики"<br>
+  Руководители: Смолов, Пузанков, Куприянов<br><br>
+
+  3. Гироскопические приборы<br>
+  Основатели: Крылов, Булгаков, Кудревич<br><br>
+
+  4. Автоматика<br>
+  1908 - первая лаборатория<br>
+  1935 - кафедра<br>
+  Руководители: Тимофеев, Вавилов, Шестопалов<br><br>
+
+  5. Измерительные системы<br>
+  1929 - основание<br>
+  Современное название с 2000-х<br>
+  Руководитель: Алексеев<br><br>
+
+  6. Развитие<br>
+  Адаптация к новым технологиям<br>
+  Компьютеризация и кибернетика</p>
+</div>
+}
+@if (isOpen_3 == 'final'){
+<div class="text_box">
+  <p>В 1973 году из состава кафедры автоматики и телемеханики была выделена кафедра электронных и магнитных цепей. У истоков
+  кафедры стоял профессор В.И. Анисимов. В связи с открытием подготовки специалистов в области автоматизированного
+  проектирования эта кафедра в 1984 году переименована в кафедру САПР. Заведующим кафедрой в настоящее время является
+  к.т.н., доц. Рыжов Н.Г.</p>
+</div>
+}
+@if (isOpen_4 == 'final'){
+<div class="text_box">
+  <p>В 1978 году организована кафедра математического обеспечения и применения ЭВМ. В состав кафедры вошли преподаватели
+  кафедры ВТ и сотрудники вычислительного центра ЛЭТИ. Её первым заведующим был проректор по учебно-методической работе,
+  профессор В.И. Тимохин. В течении многих лет кафедрой успешно руководил д.т.н., проф. Лисс А.Р., сегодня кафедру
+  возглавляет к.т.н. Кринкин К.В.
+</p>
+</div>
+}
+@if (isOpen_5 == 'final'){
+<div class="text_box">
+  <p>В 1982 году организована кафедра автоматизированных систем обработки информации и управления. С момента основания
+  кафедрой и до 2013 года заведовал кафедрой профессор Б.Я. Советов. У истоков кафедры находились профессора Р.И. Юргенсон
+  и А.И. Губинский. В 2016 году кафедра была переименована и теперь носит навзвание «Информационные системы». Сегодня
+  кафедрой заведует к.т.н., проф. Цехановский В.В.
+</p>
+</div>
+}
+
 <div class="content">
   <div class="title">ФИБС</div>
-  <div class="hist_treck" [@hover]="isOpen_6" (mouseenter)="onMouseEnter_6()" (mouseleave)="onMouseLeave_6()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_7" (mouseenter)="onMouseEnter_7()" (mouseleave)="onMouseLeave_7()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_8" (mouseenter)="onMouseEnter_8()" (mouseleave)="onMouseLeave_8()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_9" (mouseenter)="onMouseEnter_9()" (mouseleave)="onMouseLeave_9()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_10" (mouseenter)="onMouseEnter_10()" (mouseleave)="onMouseLeave_10()">Г.Г.</div>
+  <div class="hist_treck" [@hover]="isOpen_6" (mouseenter)="onMouseEnter_6()" (mouseleave)="onMouseLeave_6()"><p class="yer">1962-1975 гг.</p></div>
+  <div class="hist_treck" [@hover]="isOpen_7" (mouseenter)="onMouseEnter_7()" (mouseleave)="onMouseLeave_7()"><p class="yer">1975-1999 гг.</p></div>
+  <div class="hist_treck" [@hover]="isOpen_8" (mouseenter)="onMouseEnter_8()" (mouseleave)="onMouseLeave_8()"><p class="yer">1999-2005 гг.</p></div>
+  <div class="hist_treck" [@hover]="isOpen_9" (mouseenter)="onMouseEnter_9()" (mouseleave)="onMouseLeave_9()"><p class="yer">2005-2015 гг.</p></div>
+  <div class="hist_treck" [@hover]="isOpen_10" (mouseenter)="onMouseEnter_10()" (mouseleave)="onMouseLeave_10()"><p class="yer">2015-н.в.</p></div>
 </div>
+
+@if (isOpen_6 == 'final'){
+  <div class="text_box">
+    <p>
+      В 1962 по инициативе академиков Берга А.И. и Куприянова П.А.<br>
+      создана кафедра "Электронно-медицинской аппаратуры" (ЭМА)<br>
+      на электрофизическом факультете ЛЭТИ<br>
+      Первая в стране подготовка специалистов по медицинской технике<br>
+      База для развития - существующие кафедры по физике, биофизике, химии<br><br>
+    </p>
+  </div>
+}
+@if (isOpen_7 == 'final'){
+<div class="text_box">
+  <p>
+    1975 - переименование кафедры ЭМА в "Биомедицинской электроники и охраны среды" (БМЭиОС)<br>
+    1979 - создание Учебно-методического Совета РФ при ЛЭТИ<br>
+    Развитие двух направлений:<br>
+    • Медицинская аппаратура для диагностики и лечения<br>
+    • Приборы для экологического контроля<br>
+    Участие в 300+ проектах по медицинской технике<br><br>
+  </p>
+</div>
+}
+@if (isOpen_8 == 'final'){
+<div class="text_box">
+  <p>
+    Сентябрь 1999 - образование факультета приборостроения,<br>
+    биомедицинской и экологической инженерии (ФПБЭИ)<br>
+    В состав вошли:<br>
+    • БМЭиОС<br>
+    • Инженерной защиты окружающей среды (ИЗОС)<br>
+    • Безопасности жизнедеятельности (БЖД)<br>
+    • Прикладной механики (ПМИГ)<br>
+    Первый декан - проф. Е.П. Попечителев<br>
+    Сформированы 2 направления:<br>
+    • Приборостроение и ИИ технологии<br>
+    • Биомедицинская инженерия<br><br>
+  </p>
+</div>
+}
+@if (isOpen_9 == 'final'){
+<div class="text_box">
+  <p>
+    2003 - переименование направления в "Биотехнические системы и технологии"<br>
+    2005 - декан факультета - проф. Ю.В. Филатов<br>
+    Разработка концепции "Биотехтоники":<br>
+    • Взаимодействие технических и биологических систем<br>
+    • Создание англоязычных программ<br>
+    • Развитие международного сотрудничества<br>
+    Выполнение НИР по безопасности жизнедеятельности<br><br>
+  </p>
+</div>
+}
+@if (isOpen_10 == 'final'){
+<div class="text_box">
+  <p>
+    2015 - декан факультета - проф. А.М. Боронахин<br>
+    Модернизация учебных планов:<br>
+    • Введение "сквозных проектов" с 1 курса<br>
+    • 2 формата ВКР:<br>
+    - Практико-ориентированный (разработка устройств)<br>
+    - Научно-исследовательский (фундаментальные работы)<br>
+    • Сотрудничество с предприятиями-партнерами<br>
+    Развитие лабораторной базы (УНЛ ПРОЛАБ CDIO-ФИБС)
+  </p>
+</div>
+}
 <div class="content">
   <div class="title">ИНПРОТЕХ</div>
-  <div class="hist_treck" [@hover]="isOpen_11" (mouseenter)="onMouseEnter_11()" (mouseleave)="onMouseLeave_11()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_12" (mouseenter)="onMouseEnter_12()" (mouseleave)="onMouseLeave_12()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_13" (mouseenter)="onMouseEnter_13()" (mouseleave)="onMouseLeave_13()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_14" (mouseenter)="onMouseEnter_14()" (mouseleave)="onMouseLeave_14()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_15" (mouseenter)="onMouseEnter_15()" (mouseleave)="onMouseLeave_15()">Г.Г.</div>
+  <div class="hist_treck" [@hover]="isOpen_11" (mouseenter)="onMouseEnter_11()" (mouseleave)="onMouseLeave_11()"><p class="yer">1928-1930гг.</p></div>
+  <div class="hist_treck" [@hover]="isOpen_12" (mouseenter)="onMouseEnter_12()" (mouseleave)="onMouseLeave_12()"><p class="yer">1959-1977гг.</p></div>
+  <div class="hist_treck" [@hover]="isOpen_13" (mouseenter)="onMouseEnter_13()" (mouseleave)="onMouseLeave_13()"><p class="yer">1977-1999гг.</p></div>
+  <div class="hist_treck" [@hover]="isOpen_14" (mouseenter)="onMouseEnter_14()" (mouseleave)="onMouseLeave_14()"><p class="yer">1999-2014 гг.</p></div>
+  <div class="hist_treck" [@hover]="isOpen_15" (mouseenter)="onMouseEnter_15()" (mouseleave)="onMouseLeave_15()"><p class="yer">2019-н.в.</p></div>
 </div>
+@if (isOpen_11 == 'final'){
+<div class="text_box">
+  <p>
+    1928 - введение экономических дисциплин для инженеров<br>
+    1930 - создание кафедры политэкономии и конкретной экономики<br>
+    Разделение на две кафедры:<br>
+    • Политэкономия<br>
+    • Экономика и организация производства<br><br>
+  </p>
+</div>
+}
+@if (isOpen_12 == 'final'){
+<div class="text_box">
+  <p>
+    1959-1966 - заведующий кафедрой проф. А.Н. Малафеев<br>
+    Автор фундаментальных трудов по ценообразованию<br>
+    Подготовил плеяду известных экономистов-реформаторов<br>
+    Создал научную школу "рыночников"<br>
+    Основные направления исследований:<br>
+    • Товарно-денежные отношения<br>
+    • История ценообразования в СССР<br><br>
+  </p>
+</div>
+}
+@if (isOpen_13 == 'final'){
+<div class="text_box">
+  <p>
+    1977-1989 - заведующий кафедрой проф. В.С. Вечканов<br>
+    Исследования эффективности общественного производства<br>
+    1990-е - внедрение курса "Экономическая теория"<br>
+    1961 - реорганизация кафедры в "Экономику промышленности"<br>
+    Прикладные исследования для промышленных предприятий<br><br>
+  </p>
+</div>
+}
+@if (isOpen_14 == 'final'){
+<div class="text_box">
+  <p>
+    1999 - образование факультета экономики и менеджмента (ФЭМ)<br>
+    2000 - создание кафедры менеджмента и систем качества<br>
+    2001 - разделение кафедры на:<br>
+    • Инновационный менеджмент<br>
+    • Прикладная экономика<br>
+    Первый декан - проф. С.А. Степанов<br>
+    Развитие научной школы по управлению качеством<br><br>
+  </p>
+</div>
+}
+@if (isOpen_15 == 'final'){
+<div class="text_box">
+  <p>
+    2019 - преобразование ФЭМ в ИНПРОТЕХ<br>
+    Новые направления:<br>
+    • Инновационное проектирование<br>
+    • Технологическое предпринимательство<br>
+    Сохранение традиций экономического образования<br>
+    Интеграция технических и управленческих компетенций
+  </p>
+</div>
+}
 <div class="content">
   <div class="title">ФЭЛ</div>
-  <div class="hist_treck" [@hover]="isOpen_16" (mouseenter)="onMouseEnter_16()" (mouseleave)="onMouseLeave_16()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_17" (mouseenter)="onMouseEnter_17()" (mouseleave)="onMouseLeave_17()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_18" (mouseenter)="onMouseEnter_18()" (mouseleave)="onMouseLeave_18()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_19" (mouseenter)="onMouseEnter_19()" (mouseleave)="onMouseLeave_19()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_20" (mouseenter)="onMouseEnter_20()" (mouseleave)="onMouseLeave_20()">Г.Г.</div>
+  <div class="hist_treck" [@hover]="isOpen_16" (mouseenter)="onMouseEnter_16()" (mouseleave)="onMouseLeave_16()"><p class="yer">1946г.</p></div>
+  <div class="hist_treck" [@hover]="isOpen_17" (mouseenter)="onMouseEnter_17()" (mouseleave)="onMouseLeave_17()"><p class="yer">1949-1959гг.</p></div>
+  <div class="hist_treck" [@hover]="isOpen_18" (mouseenter)="onMouseEnter_18()" (mouseleave)="onMouseLeave_18()"><p class="yer">1960-1970-е гг.</p></div>
+  <div class="hist_treck" [@hover]="isOpen_19" (mouseenter)="onMouseEnter_19()" (mouseleave)="onMouseLeave_19()"><p class="yer">1980-1990-е гг.</p></div>
+  <div class="hist_treck" [@hover]="isOpen_20" (mouseenter)="onMouseEnter_20()" (mouseleave)="onMouseLeave_20()"><p class="yer">2000-е гг.</p></div>
 </div>
+@if (isOpen_16 == 'final'){
+<div class="text_box">
+  <p>
+    1 сентября 1946 года в Ленинградском электротехническом институте (ЛЭТИ) начал работу электровакуумный факультет,
+    созданный в ходе реорганизации структуры вуза.<br>Это событие ознаменовало старт подготовки инженеров в области
+    электроники – тогда ещё основанной на вакуумных приборах.<br>Первые кафедры и преподаватели<br>Обучение обеспечивали
+    четыре кафедры:<br>1. Основ электровакуумной техники (зав. Б.П. Козырев)<br>2. Рентгенотехники (зав. Ф.Н. Хараджа)<br>3.
+    Радиотехнической электроники (зав. Д.А. Кацман)<br>4. Промышленной электроники (зав. А.А. Потсар)<br>На старте на
+    факультете работало всего 13 преподавателей,<br>которые заложили основы учебных программ и научных
+    исследований.<br>Первый декан и задачи<br>Деканом был назначен профессор Ф.Н. Хараджа.<br>Основной задачей факультета
+    стала подготовка специалистов<br>для восстановления и развития электронной промышленности СССР,<br>особенно в
+    послевоенные годы.
+  </p>
+</div>
+}
+@if (isOpen_17 == 'final'){
+<div class="text_box">
+  <p>
+    >В 1949 году факультет был переименован в факультет электронной техники (ФЭТ),<br>что отражало расширение направлений
+    подготовки.<br>Ключевые изменения<br>- 1956 год – открыта кафедра технологии электровакуумного производства<br>(рук.
+    Р.А. Гаврилов, главный инженер завода «Светлана»).<br>Это позволило усилить технологическую подготовку студентов.<br>-
+    Специальность "Электровакуумная техника" преобразована в "Электронные приборы",<br>включив не только вакуумные, но и
+    газоразрядные и полупроводниковые устройства.<br>Научные достижения<br>- Б.П. Козырев и Ю.А. Кацман защитили докторские
+    диссертации,<br>заложив основы научных школ.<br>- Усилилось взаимодействие с промышленностью:<br>выпускники
+    распределялись по всей стране – от Москвы до Сибири и Средней Азии.
+  </p>
+</div>
+}
+@if (isOpen_18 == 'final'){
+<div class="text_box">
+  <p>
+    Этот период стал временем бурного роста факультета:<br>появились новые специальности, увеличился преподавательский
+    состав,<br>укрепились связи с академической наукой.<br>Новые специальности<br>- 1961 год – открыта подготовка по
+    "Оптико-физическим приборам"<br>(первый набор – 25 человек, выпуск в 1962).<br>- 1969 год – начата подготовка по
+    "Промышленной электронике"<br>(50 студентов, первый выпуск – 1973).<br>Создание базовых кафедр (1973)<br>Для усиления
+    практической подготовки открыты:<br>- Кафедра электронного приборостроения (на базе ЛОЭП «Светлана»)<br>- Кафедра
+    оптоэлектроники (в ФТИ им. А.Ф. Иоффе)<br>Рост кадрового потенциала<br>К 1961 году на пяти выпускающих кафедрах работало
+    29 преподавателей,<br>в том числе 2 профессора и 9 доцентов.
+  </p>
+</div>
+}
+@if (isOpen_19 == 'final'){
+<div class="text_box">
+  <p>
+    В эти годы факультет адаптировался к новым технологическим реалиям:<br>полупроводниковая электроника вытесняла
+    вакуумную,<br>появились новые исследовательские центры.<br>Ключевые события<br>- 1986 год – введена гермозона (чистое
+    помещение для микроэлектроники),<br>позже ставшая Центром микротехнологии и диагностики (ЦМИД).<br>- 1989 год – открыта
+    специальность "Физическая электроника",<br>объединены некоторые кафедры.<br>- 1999 год – факультет электронной техники
+    (ФЭТ) вошёл в состав<br>нового факультета электроники (ФЭЛ).<br>Первым деканом стал профессор Ю.А. Быстров.
+
+  </p>
+</div>
+}
+@if (isOpen_20 == 'final'){
+<div class="text_box">
+  <p>
+    Современный факультет электроники – это центр передовых исследований<br>в области наноэлектроники, фотоники и
+    микросистемной техники.<br>Основные направления<br>- 2005 год – создана базовая кафедра физики и технологии
+    твердотельной электроники<br>(совместно с ФТИ им. Иоффе).<br>- Переход на двухуровневую систему (бакалавриат +
+    магистратура) по направлениям:<br> - "Электроника и наноэлектроника"<br> - "Нанотехнологии и микросистемная
+    техника"<br>- 2021 год – 75-летие факультета<br>(отсчёт с 1946 года, но исторические корни – с 1906-го).<br>Современная
+    структура<br>Сегодня в состав факультета входят 8 кафедр, среди которых:<br>- Микроволновой электроники (МВЭ)<br>-
+    Физической электроники и технологии (ФЭТ)<br>- Фотоники (Фот)<br>- Микро- и наноэлектроники (МНЭ)<br>На факультете
+    работают 49 профессоров, 113 доцентов,<br>ведутся масштабные научные проекты,<br>публикуются работы в международных
+    журналах.
+  </p>
+</div>
+}
 
 <div class="content">
   <div class="title">ГФ</div>
-  <div class="hist_treck" [@hover]="isOpen_21" (mouseenter)="onMouseEnter_21()" (mouseleave)="onMouseLeave_21()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_22" (mouseenter)="onMouseEnter_22()" (mouseleave)="onMouseLeave_22()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_23" (mouseenter)="onMouseEnter_23()" (mouseleave)="onMouseLeave_23()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_24" (mouseenter)="onMouseEnter_24()" (mouseleave)="onMouseLeave_24()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_25" (mouseenter)="onMouseEnter_25()" (mouseleave)="onMouseLeave_25()">Г.Г.</div>
+  <div class="hist_treck" [@hover]="isOpen_21" (mouseenter)="onMouseEnter_21()" (mouseleave)="onMouseLeave_21()"><p class="yer">1989 г.</p></div>
+  <div class="hist_treck" [@hover]="isOpen_22" (mouseenter)="onMouseEnter_22()" (mouseleave)="onMouseLeave_22()"><p class="yer">1991-1993 гг.</p></div>
+  <div class="hist_treck" [@hover]="isOpen_23" (mouseenter)="onMouseEnter_23()" (mouseleave)="onMouseLeave_23()"><p class="yer">1994-1996 гг.</p></div>
+  <div class="hist_treck" [@hover]="isOpen_24" (mouseenter)="onMouseEnter_24()" (mouseleave)="onMouseLeave_24()"><p class="yer">2002 г.</p></div>
+  <div class="hist_treck" [@hover]="isOpen_25" (mouseenter)="onMouseEnter_25()" (mouseleave)="onMouseLeave_25()"><p class="yer">2010 г.</p></div>
 </div>
+@if (isOpen_21 == 'final'){
+<div class="text_box">
+  <p>
+    Факультет общественных наук и гуманитарной подготовки был образован в ЛЭТИ в июне 1989 года<br>
+    и стал одним из первых гуманитарных факультетов в технических вузах северной столицы.<br>
+    Образование факультета стало возможным благодаря инициативе ректора ЛЭТИ проф. О.В. Алексеева<br>
+    и группы преподавателей.<br>
+    На этапе образования в факультет вошли кафедры:<br>
+    политической истории, философии, политэкономии, социологии, иностранных языков<br>
+    и факультет общественных профессий (ФОП).<br>
+    Первым деканом стал проф. Калашников В.В.
+  </p>
+</div>
+}
+@if (isOpen_22 == 'final'){
+<div class="text_box">
+  <p>
+    В 1991 году название изменено на Гуманитарный факультет (ГФ).<br>
+    Этот период характеризуется разработкой и внедрением новой системы гуманитарного образования в ЛЭТИ.<br>
+    Начались структурные изменения:<br>
+    присоединена кафедра русского языка,<br>
+    кафедра политэкономии перешла в состав факультета экономики и менеджмента.<br>
+    В 1993 году факультет первым в Санкт-Петербурге начал обучение<br>
+    по специальности «Связи с общественностью».
+  </p>
+</div>
+}
+@if (isOpen_23 == 'final'){
+<div class="text_box">
+  <p>
+    В 1994 году деканом стала проф. Маркова О.Ю.<br>
+    В 1996 году создана кафедра «Связи с общественностью».<br>
+    Формируется двунаправленная деятельность факультета:<br>
+    гуманитарное образование студентов технических факультетов<br>
+    и подготовка специалистов по гуманитарным специальностям.<br>
+    Факультет начинает приобретать авторитет в академической среде.
+  </p>
+</div>
+}
+@if (isOpen_24 == 'final'){
+<div class="text_box">
+  <p>
+    На факультете появилась специальность<br>
+    «Теория и практика межкультурной коммуникации».<br>
+    Продолжается развитие научной и учебно-методической работы.<br>
+    Факультет укрепляет свои позиции как центр гуманитарного образования<br>
+    в техническом университете.
+  </p>
+</div>
+}
+@if (isOpen_25 == 'final'){
+<div class="text_box">
+  <p>
+    С 2010 года деканом является доц. Гигаури Н.К.<br>
+    Факультет окончательно сформировался как авторитетный научный<br>
+    и учебно-методический центр,<br>
+    известный в Санкт-Петербурге и России.<br>
+    Продолжается подготовка специалистов по двум основным специальностям,<br>
+    развиваются международные связи,<br>
+    совершенствуются образовательные программы.
+  </p>
+</div>
+}
 <div class="content">
   <div class="title">ФЭА</div>
-  <div class="hist_treck" [@hover]="isOpen_26" (mouseenter)="onMouseEnter_26()" (mouseleave)="onMouseLeave_26()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_27" (mouseenter)="onMouseEnter_27()" (mouseleave)="onMouseLeave_27()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_28" (mouseenter)="onMouseEnter_28()" (mouseleave)="onMouseLeave_28()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_29" (mouseenter)="onMouseEnter_29()" (mouseleave)="onMouseLeave_29()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_30" (mouseenter)="onMouseEnter_30()" (mouseleave)="onMouseLeave_30()">Г.Г.</div>
+  <div class="hist_treck" [@hover]="isOpen_26" (mouseenter)="onMouseEnter_26()" (mouseleave)="onMouseLeave_26()"><p class="yer">1920-1938 гг.</p></div>
+  <div class="hist_treck" [@hover]="isOpen_27" (mouseenter)="onMouseEnter_27()" (mouseleave)="onMouseLeave_27()"><p class="yer">1938-1960 гг.</p></div>
+  <div class="hist_treck" [@hover]="isOpen_28" (mouseenter)="onMouseEnter_28()" (mouseleave)="onMouseLeave_28()"><p class="yer">1960-1999 гг.</p></div>
+  <div class="hist_treck" [@hover]="isOpen_29" (mouseenter)="onMouseEnter_29()" (mouseleave)="onMouseLeave_29()"><p class="yer">1999-2014 гг.</p></div>
+  <div class="hist_treck" [@hover]="isOpen_30" (mouseenter)="onMouseEnter_30()" (mouseleave)="onMouseLeave_30()"><p class="yer">2021-н.в.</p></div>
 </div>
+@if (isOpen_26 == 'final'){
+<div class="text_box">
+  <p>
+    Факультет электротехники и автоматики – один из старейших факультетов ЛЭТИ.<br>
+    В 1920 году создан как "Электротехнический факультет" (ЭТФ) с 5 кафедрами:<br>
+    • Электрической тяги (проф. Г.О. Графтио)<br>
+    • Гидроэнергетические установки (проф. И.П. Егиазаров)<br>
+    • Техника высоких напряжений (проф. А.А. Смуров)<br>
+    • Электрификация железных дорог (проф. Я.М. Гаккель)<br>
+    • Электрические машины (проф. Ф.И. Холуянов)<br>
+    Первым деканом избран проф. В.В. Дмитриев.<br>
+    В 1922 году добавились кафедры:<br>
+    • Электрическое распределение механической энергии (проф. С.А. Ринкевич)<br>
+    • Теоретическая электротехника<br><br>
+  </p>
+</div>
+}
+@if (isOpen_27 == 'final'){
+<div class="text_box">
+  <p>
+    Факультет переименован в "Электроэнергетический" (1938-1955),<br>
+    затем снова в "Электротехнический" (1955-1960).<br>
+    Ученые факультета внесли вклад в Победу:<br>
+    - разработка размагничивания судов<br>
+    - высокочастотная закалка брони<br>
+    5 из 10 мемориальных досок университета посвящены профессорам факультета.<br>
+    В 1946-1960 гг. деканами были:<br>
+    • проф. Д.В. Васильев<br>
+    • доц. А.Н. Дмитриев<br><br>
+  </p>
+</div>
+}
+@if (isOpen_28 == 'final'){
+<div class="text_box">
+  <p>
+    Факультет получил названия:<br>
+    • "Электрификации и автоматизации" (1960-1978)<br>
+    • "Электротехники и автоматизации" (1978-1999)<br>
+    В 1960-е включал 6 выпускающих кафедр:<br>
+    • Систем автоматического управления (проф. Д.В. Васильев)<br>
+    • Электрификации промышленных установок (проф. А.В. Башарин)<br>
+    • Токов высокой частоты (проф. А.Е. Слухоцкий)<br>
+    • Промышленной электроники (проф. К.В. Булгаков)<br>
+    • Электрических машин (проф. Н.П. Ермолин)<br>
+    • Электрификации судов (доц. Б.И. Норневский)<br>
+    В 1966 г. создан ФКЭА (корабельной электрорадиотехники)<br><br>
+  </p>
+</div>
+}
+@if (isOpen_29 == 'final'){
+<div class="text_box">
+  <p>
+    С 1999 года - "Факультет электротехники и автоматики" (ФЭА).<br>
+    После реорганизации 2001 года:<br>
+    • Включены кафедры ЭАС и КСУ<br>
+    • В 2008 объединены кафедры САУ и ЭАС<br>
+    Деканы:<br>
+    • 1999-2014 - проф. В.В. Путов<br>
+    • 2014-2021 - доц. Ю.В. Сентябрёв<br>
+    Структура:<br>
+    4 выпускающих кафедры, базовая кафедра,<br>
+    вычислительная лаборатория, учебный центр, СКБ<br><br>
+  </p>
+</div>
+}
+@if (isOpen_30 == 'final'){
+<div class="text_box">
+  <p>
+    С 2021 года деканом является доц. А.Д. Стоцкая.<br>
+    Современные кафедры:<br>
+    • Систем автоматического управления (САУ)<br>
+    • Корабельных систем управления (КСУ)<br>
+    • Электротехнологической техники (ЭТПТ)<br>
+    • Робототехники и автоматизации (РАПС)<br>
+    Факультет сохраняет лидирующие позиции<br>
+    в подготовке инженеров-электротехников<br>
+    и разработке автоматизированных систем
+  </p>
+</div>
+}
 <div class="content">
   <div class="title">ФРТ</div>
-  <div class="hist_treck" [@hover]="isOpen_31" (mouseenter)="onMouseEnter_31()" (mouseleave)="onMouseLeave_31()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_32" (mouseenter)="onMouseEnter_32()" (mouseleave)="onMouseLeave_32()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_33" (mouseenter)="onMouseEnter_33()" (mouseleave)="onMouseLeave_33()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_34" (mouseenter)="onMouseEnter_34()" (mouseleave)="onMouseLeave_34()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_35" (mouseenter)="onMouseEnter_35()" (mouseleave)="onMouseLeave_35()">Г.Г.</div>
+  <div class="hist_treck" [@hover]="isOpen_31" (mouseenter)="onMouseEnter_31()" (mouseleave)="onMouseLeave_31()"><p class="yer">1886-1906 гг.</p></div>
+  <div class="hist_treck" [@hover]="isOpen_32" (mouseenter)="onMouseEnter_32()" (mouseleave)="onMouseLeave_32()"><p class="yer">1917-1929 гг.</p></div>
+  <div class="hist_treck" [@hover]="isOpen_33" (mouseenter)="onMouseEnter_33()" (mouseleave)="onMouseLeave_33()"><p class="yer">1930-1941 гг.</p></div>
+  <div class="hist_treck" [@hover]="isOpen_34" (mouseenter)="onMouseEnter_34()" (mouseleave)="onMouseLeave_34()"><p class="yer">1945-1991 гг.</p></div>
+  <div class="hist_treck" [@hover]="isOpen_35" (mouseenter)="onMouseEnter_35()" (mouseleave)="onMouseLeave_35()"><p class="yer">1991-н.в.</p></div>
 </div>
 
-<div class="content">
-  <div class="title">ИФИО</div>
-  <div class="hist_treck" [@hover]="isOpen_36" (mouseenter)="onMouseEnter_36()" (mouseleave)="onMouseLeave_36()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_37" (mouseenter)="onMouseEnter_37()" (mouseleave)="onMouseLeave_37()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_38" (mouseenter)="onMouseEnter_38()" (mouseleave)="onMouseLeave_38()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_39" (mouseenter)="onMouseEnter_39()" (mouseleave)="onMouseLeave_39()">Г.Г.</div>
-  <div class="hist_treck" [@hover]="isOpen_40" (mouseenter)="onMouseEnter_40()" (mouseleave)="onMouseLeave_40()">Г.Г.</div>
+@if (isOpen_31 == 'final'){
+<div class="text_box">
+  <p>
+    ЛЭТИ основан в 1886 как Техническое училище почтово-телеграфного ведомства<br>
+    А.С. Попов изобретает радио в 1895 году<br>
+    В 1901 создана лаборатория беспроволочной телеграфии<br>
+    С 1902 Попов читает курс "Телеграфирование без проводов"<br>
+    После смерти Попова в 1906 подготовка продолжается:<br>
+    • Курс "Беспроволочный телеграф" (проф. Осадчий, Скрицкий)<br>
+    • Курс "Электрические колебания и волны" (проф. Петровский)<br><br>
+  </p>
 </div>
+}
+@if (isOpen_32 == 'final'){
+<div class="text_box">
+  <p>
+    1917 - создана первая в России кафедра радиотехники<br>
+    Заведующий - проф. И.Г. Фрейман (до 1929)<br>
+    1924 - издан первый учебник "Курс радиотехники"<br>
+    1925 - образована кафедра "Общий курс радиотехники"<br>
+    Сформирована система подготовки по направлениям:<br>
+    • Радиопередающие и приемные устройства<br>
+    • Электровакуумные приборы<br>
+    • Радиоизмерения<br>
+    • Конструкции приборов ВЧ<br><br>
+  </p>
+</div>
+}
+@if (isOpen_33 == 'final'){
+<div class="text_box">
+  <p>
+    Созданы новые кафедры:<br>
+    • Радиопередающих устройств (проф. Берг)<br>
+    • Радиоприемных устройств (проф. Сифоров)<br>
+    • Теоретических основ радиотехники (проф. Нейман)<br>
+    • Радиоизмерений (проф. Кьяндский)<br>
+    Введены новые курсы:<br>
+    • Распространение радиоволн<br>
+    • Короткие и УКВ<br>
+    • Расчет и проектирование радиоустройств<br><br>
+  </p>
+</div>
+}
+@if (isOpen_34 == 'final'){
+<div class="text_box">
+  <p>
+    1945 - образован радиотехнический факультет<br>
+    В состав вошли:<br>
+    • Довоенные кафедры радиотехники<br>
+    • 3 новые кафедры:<br>
+    - Радиосистем<br>
+    - Конструирования и технологии<br>
+    - Телевидения<br>
+    Формируется система базовых кафедр<br>
+    Развиваются научные школы<br><br>
+  </p>
+</div>
+}
+@if (isOpen_35 == 'final'){
+<div class="text_box">
+  <p>
+    Факультет радиотехники и телекоммуникаций включает:<br>
+    5 основных кафедр<br>
+    5 базовых кафедр на предприятиях<br>
+    Направления подготовки:<br>
+    • Радиотехника<br>
+    • Конструирование электронных средств<br>
+    • Инфокоммуникационные технологии<br>
+    • Радиоэлектронные системы<br>
+    Сохранение традиций при внедрении новых технологий<br>
+    Подготовка специалистов мирового уровня
+  </p>
+</div>
+}
+
